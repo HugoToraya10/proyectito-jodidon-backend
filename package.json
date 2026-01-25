@@ -1,0 +1,12 @@
+{
+  "name": "proyectito-jodidon",
+  "version": "1.0.0",
+  "description": "Este proyecto es una prueba para posteriormente hacer una API REST",
+  "main": "index.js",
+  "author": "Hugo Toraya <hugotoraya6@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
