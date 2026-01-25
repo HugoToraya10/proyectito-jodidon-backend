@@ -6,6 +6,10 @@
   "author": "Hugo Toraya <hugotoraya6@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+
   "devDependencies": {
     "nodemon": "^3.1.11"
   }
