@@ -1,0 +1,113 @@
+APUNTES DE NODEJS
+--------- EN CMD --------
+
+VER LA VERSIÓN DE NODE.JS
+node --version
+
+ABRIR LA CONSOLA INTERACTIVA DE NODE (REPL)
+node
+
+PARA LIMPIAR LA CONSOLA
+Ctrl + L
+
+---------------
+
+
+
+
+
+
+
+APUNTES DE GIT
+---- EN TERMINAL DE VSCODE -----
+
+CONFIGURAR EL REGISTRO DE USURAIO
+git config --global user.name "Hugo Toraya"
+git config --global user.email "hugotoraya6@gmail.com"
+
+
+
+
+CREAR (INICIALIZAR) UN REPOSITORIO EN UNA CARPETA ESPECÍFICA
+git init 
+
+
+VER Y ADMINISTRAR RAMAS EN UN REPOSITORIO GIT
+git branch
+
+
+MOSTRAR EL NOMBRE DE LA RAMA EN LA QUE SE ESTÁ ACTUALMENTE
+git branch --show-current
+
+
+VER EL ESTADO ACTUAL DEL REPOSITORIO
+git status
+
+
+MARCAR ARCHIVOS LISTOS PARA EL PRÓXIMO COMMIT
+git add [archivo] (si se usa un ".", se marcan todos)
+
+
+GUARDAR LOS CAMBIOS AGREGADOS CON GIT ADD (HACER UN COMMIT)
+git commit -m "Mensaje del cambio"
+
+
+REFERENCIAR EL REPOSITORIO DE GIT A LOS SERVIDORES DE GITHUB
+git remote add [Nombre asignado al repo remoto] [URL del repositorio de GitHub]
+git remote add github https://github.com/HugoToraya10/proyectito-jodidon-backend.git
+
+
+PARA RENOMBRAR LA RAMA EN LA QUE SE ESTÁ ACTUALMENTE
+git branch -M [Nombre nuevo]
+
+
+HACER UN GIT PUSH (ENVIAR EL COMMIT DESDE LOCAL HASTA GITHUB)
+git push -u [Nombre del repo remoto] [Rama local a subir]
+git push -u github main
+
+
+PARA HACER QUE GIT DEJE DE RASTREAR UN ARCHIVO
+git rm --cached [archivo.extension]
+
+
+
+ACLARACIONES
+COMANDO -u
+Es el análogo a --set-upstream, que sirve para conectar mi rama local a la rama remota y dejar por defecto la ruta hacia la cual se harán los próximos commits.
+
+COMANDO -m
+Sirve para renombrar una rama de manera segura, siendo que si hay otra rama con el mismo nombre, no sobreescribe.
+
+COMANDO -M
+Sirve para renombrar una rama sobreescribiendo cualquier otra rama que se llame igual.
+----------------
+
+
+
+
+
+
+
+
+APUNTES DE YARN
+----- EN TERMINAL DE VSCODE ------
+
+PARA INICIALIZAR UN PROYECTO DE NODE.JS USANDO YARN
+yarn init
+
+
+PARA INSTALAR UNA DEPENDENCIA
+yarn add [nombre de la libreria] -D
+yarn add nodemon
+
+
+
+
+
+
+
+
+
+29:00
+
+
