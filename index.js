@@ -1,9 +1,11 @@
+require('dotenv').config();
 const HTTP = require("http");
 
+const PORT = process.env.PORT;
 const SERVER = HTTP.createServer(requestController);
 
-SERVER.listen(4000);
+SERVER.listen(PORT);
 
 function requestController(){
-    console.log("Se detectó una petición al servidor");
+    console.log("Servidor alojado en el puerto " + PORT);
 };
