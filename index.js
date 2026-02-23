@@ -1,11 +1,15 @@
-require('dotenv').config();
-const HTTP = require("http");
+require('dotenv').config()
+const express = require('express')
+const app = express()
+const port = process.env.PORT;
+app.use(express.static('public'))
 
-const PORT = process.env.PORT;
-const SERVER = HTTP.createServer(requestController);
 
-SERVER.listen(PORT);
 
-function requestController(){
-    console.log("Servidor alojado en el puerto " + PORT);
-};
+app.get('/', function (req, res) {
+  res.send('Hola mundo')
+})
+
+app.listen(port, function () {
+  console.log(`Example app listening on port ${port}`)
+})

@@ -10,7 +10,30 @@ node
 PARA LIMPIAR LA CONSOLA
 Ctrl + L
 
----------------
+
+
+
+
+LIBRERÍAS (DEPENDENCIAS) NECESARIAS:
+
+PARA DEV:
+nodemon
+dotenv
+
+PARA DEPLOY:
+fs (File System)
+
+
+
+
+
+NODE.JS EN VSCODE
+Para llamar a las dependencias:
+require("dependencia");
+
+
+
+--------------------------------------------------------------------------------
 
 
 
@@ -89,8 +112,20 @@ Sirve para renombrar una rama sobreescribiendo cualquier otra rama que se llame 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 APUNTES DE YARN
------ EN TERMINAL DE VSCODE ------
+----- EN TERMINAL DE VSCODE ------------------------------------------------------
 
 PARA INICIALIZAR UN PROYECTO DE NODE.JS USANDO YARN
 yarn init
@@ -105,9 +140,5 @@ yarn add nodemon
 
 
 
-
-
-
-29:00
 
 
