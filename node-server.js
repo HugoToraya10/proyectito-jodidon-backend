@@ -1,3 +1,5 @@
+//ESTE ES EL ANTIGUO, EL QUE USABA NODE.JS PURO
+
 require('dotenv').config();
 const HTTP = require("http");
 const fs = require("fs");
