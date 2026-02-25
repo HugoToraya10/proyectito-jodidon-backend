@@ -2,7 +2,7 @@ const buttonHTML = document.querySelector("button");
 const botonConsulta = document.querySelector('button[name="consultar"]');
 const input = document.querySelector("input");
 
-buttonHTML.addEventListener("click", () => { 
+buttonHTML.addEventListener("click", () => {
     fetch("http://localhost:4000/registrar",{
         method: 'POST',
         headers:{ 'Content-Type': 'application/json'},
@@ -11,9 +11,18 @@ buttonHTML.addEventListener("click", () => {
     )
 });
 
+const tabla = document.querySelector("table").querySelector("tbody");
 botonConsulta.addEventListener("click", () =>{
     fetch("http://localhost:4000/consultar")
-
-    
+    .then(res => res.json())
+    .then(datos => {
+        let usuarios = [];
+        usuarios = datos;
+        console.log(usuarios);
+        for(let i = 0; i < usuarios.length; i++){
+            //Lógica de creación de filas de una tabla de HTML
+            tabla.insertRow().insertCell(0).innerHTML = usuarios[i].texto;
+        }
+    });
 
 })
