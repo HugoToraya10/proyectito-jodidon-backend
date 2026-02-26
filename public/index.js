@@ -20,18 +20,26 @@ botonConsulta.addEventListener("click", () =>{
         let usuarios = [];
         usuarios = datos;
 
-        console.log('indices ' + tabla.rows.length)
-        console.log('contenido: ' + (document.querySelectorAll('#tabla tbody tr')).values);
-
-        if(tabla.rows.length > 0){
-        for(let i = 0; i <= tabla.rows.length; i++){
+        while (tabla.rows.length > 0){
             tabla.deleteRow(0)
-    }}
+        }
 
         console.log(usuarios);
         for(let i = 0; i < usuarios.length; i++){
+            
+            //Creación de un botón para posteriormente añadirlo a la columna
+            let botonEliminar = document.createElement('button');
+            
             //Lógica de creación de filas de una tabla de HTML
-            tabla.insertRow().insertCell(0).innerHTML = usuarios[i].texto;
+            let filaEntera = tabla.insertRow(0);
+            filaEntera.insertCell(0).textContent = usuarios[i].texto;
+            filaEntera.insertCell(1).appendChild(botonEliminar.dataset.id = i);
         }
+        
+        console.log('indices ' + tabla.rows.length)
+        console.log('contenido: ' + (document.querySelectorAll('#tabla tbody tr')).values());
     });
 })
+
+
+
