@@ -27,6 +27,19 @@ app.get('/consultar', (req, res)=> {
 })
 
 
+app.delete('/eliminar', (req, res) => {
+  
+  console.log(req.body);
+  console.log('Se ha eliminado a: ', usuarios[req.body.id]);
+  usuarios.splice(req.body.id, 1)
+  console.log('Usuarios restantes: ',  usuarios);
+
+  res.send(req.body);
+})
+
+
+
+
 app.get('/', function (req, res) {
   res.send('Hola mundo')
 })
@@ -42,3 +55,7 @@ app.get('/about', (req, res)=> {
 app.listen(port, function () {
   console.log(`Example app listening on port ${port}`)
 })
+
+
+//Dime por qué
+//Te clavaste como un vicio, y como un vicio hoy lo tengo que sanar...
